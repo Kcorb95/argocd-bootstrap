@@ -7,4 +7,4 @@ valuesURL: https://github.com/kcorb95/argocd-env.git
 valuesVersion: HEAD
 valuesPath: '.'
 namespace: wordpress
-values: ''
+values: |-
