@@ -59,19 +59,27 @@ spec:
               {{values}}
             ignoreMissingValueFiles: true
             valueFiles:
-              - "$values/base/values.yaml"
-              - "$values/base/{{component}}-values.yaml"
-              - "$values/env/{{metadata.labels.env}}/values.yaml"
-              - "$values/env/{{metadata.labels.env}}/{{component}}-values.yaml"
-              - "$values/variant/{{metadata.labels.region}}/values.yaml"
-              - "$values/variant/{{metadata.labels.region}}/{{component}}-values.yaml"
-              - "$values/variant/{{metadata.labels.region}}/{{name}}/values.yaml"
-              - "$values/variant/{{metadata.labels.region}}/{{name}}/{{component}}-values.yaml"
-        # Values overrides
+              - $base/values.yaml
+              - $env/{{metadata.labels.env}}/values.yaml
+              - $env/{{metadata.labels.env}}/{{component}}-values.yaml
+              - $variant/{{metadata.labels.region}}/values.yaml
+              - $variant/{{metadata.labels.region}}/{{component}}-values.yaml
+              - $variant/{{metadata.labels.region}}/{{name}}/values.yaml
+        # Global values overrides
         - repoURL: '{{valuesURL}}'
           targetRevision: '{{valuesVersion}}' 
           path: 'base'
           ref: base
+        # Service / Env specific overrides
+        - repoURL: '{{valuesURL}}'
+          targetRevision: '{{valuesVersion}}' 
+          path: 'env'
+          ref: env
+        # Variants
+        - repoURL: '{{valuesURL}}'
+          targetRevision: '{{valuesVersion}}' 
+          path: 'variant'
+          ref: variant
       destination:
         server: "{{server}}"
         namespace: "{{namespace}}"

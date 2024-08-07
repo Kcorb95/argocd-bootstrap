@@ -3,7 +3,7 @@ chart: kubernetes-dashboard
 chartURL: https://kubernetes.github.io/dashboard
 chartVersion: 5.11.0
 chartPath: '.'
-valuesURL: https://github.com/rljohnsn/argocd-env.git
+valuesURL: https://github.com/Kcorb95/argocd-env.git
 valuesVersion: HEAD
 valuesPath: '.'
 namespace: kubernetes-dashboard
