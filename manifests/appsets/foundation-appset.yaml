@@ -68,10 +68,10 @@ spec:
               - "$values/variant/{{metadata.labels.region}}/{{name}}/values.yaml"
               - "$values/variant/{{metadata.labels.region}}/{{name}}/{{component}}-values.yaml"
         # Values overrides
-        - repoURL: "{{valuesURL}}"
-          targetRevision: "{{valuesVersion}}"
-          path: "{{valuesPath}}"
-          ref: values
+        - repoURL: '{{valuesURL}}'
+          targetRevision: '{{valuesVersion}}' 
+          path: 'base'
+          ref: base
       destination:
         server: "{{server}}"
         namespace: "{{namespace}}"
