@@ -5,6 +5,6 @@ chartVersion: 23.1.0
 chartPath: '.'
 valuesURL: https://github.com/kcorb95/argocd-env.git
 valuesVersion: HEAD
-valuesPath: 'base/wordpress-values.yaml'
+valuesPath: './base/wordpress-values.yaml'
 namespace: wordpress
 values: |-
