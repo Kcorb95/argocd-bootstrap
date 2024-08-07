@@ -23,10 +23,19 @@ values: |-
   wordpressConfigureCache: true
   memcached:
     enabled: true
+    auth:
+      enabled: true
+      username: "bn_wordpress"
+      password: "mcdPassword"
+
   
   wordpressUsername: "admin"
-  wordpressPassword: "password"
+  wordpressPassword: "wpPassword"
   
   mariadb:
+    enabled: true
     auth:
-      rootPassword: "somesecretpassword"
+      rootPassword: "rootPassword"
+      database: "bn_wordpress"
+      username: "bn_wordpress"
+      password: "mdbPassword"
