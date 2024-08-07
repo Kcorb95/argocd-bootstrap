@@ -8,7 +8,7 @@ valuesVersion: HEAD
 valuesPath: '.'
 namespace: wordpress
 values: |-
-  replicaCount: 2
+  replicaCount: 4
   updateStrategy.type: "RollingUpdate"
   wordpressConfigureCache: true
   memcached.enabled: true
