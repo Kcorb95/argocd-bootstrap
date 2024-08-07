@@ -23,10 +23,6 @@ values: |-
   wordpressConfigureCache: true
   memcached:
     enabled: true
-    auth:
-      enabled: true
-      username: "bn_wordpress"
-      password: "mcdPassword"
 
   
   wordpressUsername: "admin"
@@ -39,6 +35,3 @@ values: |-
       database: "bn_wordpress"
       username: "bn_wordpress"
       password: "mdbPassword"
-
-  containerSecurityContext:
-    readOnlyRootFilesystem: false
