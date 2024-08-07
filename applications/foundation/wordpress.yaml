@@ -1,6 +1,6 @@
 component: wordpress
-chart: wordpress
-chartURL: https://charts.bitnami.com/bitnami
+chart: bitnamicharts/wordpress
+chartURL: registry-1.docker.io
 chartVersion: 23.1.0
 chartPath: '.'
 valuesURL: https://github.com/Kcorb95/argocd-env.git
