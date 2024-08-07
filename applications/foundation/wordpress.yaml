@@ -8,8 +8,6 @@ valuesVersion: HEAD
 valuesPath: '.'
 namespace: wordpress
 values: |-
-  replicaCount: 4
-
   autoscaling:
     enabled: true
     minReplicas: 2
