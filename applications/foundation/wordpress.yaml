@@ -9,7 +9,6 @@ valuesPath: '.'
 namespace: wordpress
 values: |-
   replicaCount: 2
-  updateStrategy: "RollingUpdate"
   ## Set WordPress Credentials in valuesURL repository
   # mariadb.enabled: false
   ## define externalDatabase configuration in valuesURL repository
