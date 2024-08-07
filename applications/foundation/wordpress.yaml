@@ -23,7 +23,6 @@ values: |-
   wordpressConfigureCache: true
   memcached:
     enabled: true
-
   
   wordpressUsername: "admin"
   wordpressPassword: "wpPassword"
