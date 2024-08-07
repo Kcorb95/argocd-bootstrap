@@ -39,3 +39,6 @@ values: |-
       database: "bn_wordpress"
       username: "bn_wordpress"
       password: "mdbPassword"
+
+  containerSecurityContext:
+    readOnlyRootFilesystem: false
