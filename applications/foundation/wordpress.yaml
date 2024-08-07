@@ -10,5 +10,5 @@ namespace: wordpress
 values: |-
   replicaCount: 4
   updateStrategy.type: "RollingUpdate"
-  wordpressConfigureCache: false
-  memcached.enabled: false
+  wordpressConfigureCache: true
+  memcached.enabled: true
