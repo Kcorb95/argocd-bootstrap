@@ -3,7 +3,7 @@ chart: wordpress
 chartURL: https://charts.bitnami.com/bitnami
 chartVersion: 23.1.0
 chartPath: '.'
-valuesURL: https://github.com/kcorb95/argocd-env.git
+valuesURL: https://github.com/Kcorb95/argocd-env.git
 valuesVersion: HEAD
 valuesPath: '.'
 namespace: wordpress
