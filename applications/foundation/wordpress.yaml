@@ -7,11 +7,4 @@ valuesURL: https://github.com/kcorb95/argocd-env.git
 valuesVersion: HEAD
 valuesPath: '.'
 namespace: wordpress
-values: |-
-  replicaCount: 4
-  updateStrategy.type: "RollingUpdate"
-  wordpressConfigureCache: true
-  memcached.enabled: true
-  wordpressUsername: "admin"
-  wordpressPassword: "password"
-  mariadb.auth.rootPassword: "password"
+values: ''
