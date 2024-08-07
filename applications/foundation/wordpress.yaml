@@ -14,3 +14,4 @@ values: |-
   memcached.enabled: true
   wordpressUsername: "admin"
   wordpressPassword: "password"
+  mariadb.auth.rootPassword: "password"
