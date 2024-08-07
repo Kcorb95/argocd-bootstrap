@@ -2,7 +2,7 @@ component: wordpress
 chart: wordpress
 chartURL: https://charts.bitnami.com/bitnami
 chartVersion: 23.1.0
-chartPath: '.'
+chartPath: 'base/wordpress-values.yaml'
 valuesURL: https://github.com/kcorb95/argocd-env.git
 valuesVersion: HEAD
 valuesPath: '.'
