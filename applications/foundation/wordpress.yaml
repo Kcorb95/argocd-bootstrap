@@ -12,5 +12,5 @@ values: |-
   updateStrategy.type: "RollingUpdate"
   wordpressConfigureCache: true
   memcached.enabled: true
-  wordpressUsername: admin
-  wordpressPassword: password
+  wordpressUsername: "admin"
+  wordpressPassword: "password"
