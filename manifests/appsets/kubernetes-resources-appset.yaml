@@ -15,7 +15,7 @@ spec:
           - clusters: {}
   template:
     metadata:
-      name: "{{cluster.name}}-{{metadata.name}}"
+      name: "{{name}}-{{metadata.name}}"
     spec:
       project: "foundation"
       source:
