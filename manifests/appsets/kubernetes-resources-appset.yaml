@@ -15,13 +15,13 @@ spec:
           - clusters: {}
   template:
     metadata:
-      name: "{{name}}-{{metadata.name}}"
+      name: "{{cluster.name}}-{{metadata.name}}"
     spec:
       project: "foundation"
       source:
-        repoURL: "{{repoURL}}"
-        targetRevision: "{{revision}}"
-        path: "{{path}}"
+        repoURL: https://github.com/Kcorb95/argocd-bootstrap.git
+        targetRevision: main
+        path: applications/kubernetes
       destination:
         server: "{{server}}"
         namespace: "{{namespace}}"
