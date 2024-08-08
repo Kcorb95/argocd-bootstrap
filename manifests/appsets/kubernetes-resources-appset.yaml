@@ -10,9 +10,10 @@ spec:
         revision: main
         files:
           - path: "applications/kubernetes/*.yaml"
+    - clusters: {}
   template:
     metadata:
-      name: "{{path.basename}}"
+      name: "{{name}}-{{component}}"
     spec:
       project: "foundation"
       source:
