@@ -5,15 +5,17 @@ metadata:
   namespace: argocd
 spec:
   generators:
-    - git:
-        repoURL: https://github.com/Kcorb95/argocd-bootstrap.git
-        revision: main
-        files:
-          - path: "applications/kubernetes/*.yaml"
-    - clusters: {}
+    - matrix:
+        generators:
+          - git:
+              repoURL: https://github.com/Kcorb95/argocd-bootstrap.git
+              revision: main
+              files:
+                - path: "applications/kubernetes/*.yaml"
+          - clusters: {}
   template:
     metadata:
-      name: "{{name}}-{{component}}"
+      name: "{{name}}-{{metadata.labels.component}}"
     spec:
       project: "foundation"
       source:
